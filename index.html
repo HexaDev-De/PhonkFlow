@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+        <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Music Player | HexaDev</title>
+</head>
+
+<body>
+
+    <div class="background">
+        <img src="" id="bg-img" alt="Background Image">
+    </div>
+
+    <div class="container">
+        <!-- Player Image -->
+        <div class="player-img">
+            <img src="" class="active" id="cover" alt="Cover Image">
+        </div>
+
+        <!-- Song Title & Artist -->
+        <h2 id="music-title">Song Title</h2>
+        <h3 id="music-artist">Artist Name</h3>
+
+        <!-- Player Progress -->
+        <div class="player-progress" id="player-progress">
+            <div class="progress" id="progress"></div>
+            <div class="music-duration">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <!-- Player Controls -->
+        <div class="player-controls">
+            <i class="fa-solid fa-list" title="Playlist" id="playlist-toggle"></i>
+            <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+            <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+            <i class="fa-solid fa-forward" title="Next" id="next"></i>
+        </div>
+
+        <!-- Volume Control -->
+        <div class="volume-control">
+            <i class="fa-solid fa-volume-low" title="Mute" id="mute"></i>
+            <input type="range" id="volume" min="0" max="100" value="100">
+        </div>
+
+        <!-- Playlist Section -->
+        <div id="playlist-container">
+            <ul id="playlist">
+                <!-- Playlist items will be dynamically generated here -->
+            </ul>
+        </div>
+
+        <!-- Now Playing Indicator -->
+        <div id="now-playing">
+            <p>Now Playing:</p>
+            <p id="now-playing-title">Song Title</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
